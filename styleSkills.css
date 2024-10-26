@@ -1,0 +1,115 @@
+/*------SKILLS------*/
+.skills{
+    display:grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   
+    justify-items: center;
+    justify-content: center;
+    background-color: #fff;
+
+    color: #111;
+    padding: 10px 30px;
+}
+
+
+
+/*CON LOS ELEMENTOS DE JS*/
+    
+.marco-skill {
+    display:flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+
+    box-shadow: 0 0 20px #ccc;
+
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.marco-skill:hover{
+    transform: scale(1.1);
+}
+
+.skills-titulo{
+    grid-column: 1/ -1;
+}
+
+.niv-bar {
+    height: 30px;
+    min-width: 250px;;
+    margin-top: 5px;
+    border: 1px solid #111;
+    border-radius: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.inner-bar {
+    display:flex;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #565;
+    font-size: 14px;
+    color: #fff;
+
+}
+
+.logo-img{
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
+}
+
+
+/*------SKILLS QUERIES------*/
+
+
+@media screen AND (min-width:660px){
+    .skills-titulo{
+        grid-column: span 2;
+    }
+
+    .CPP{
+        grid-column: span 2;
+        width: 400px;
+    }
+}
+
+@media screen AND (min-width: 960px){
+    .skills-titulo{
+        grid-column: 1/ -1;
+    }
+
+    .skills{
+        padding: 4vw;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .HTML{
+        grid-column: span 5;
+    }
+    .CSS{
+        grid-column: span 6;
+        justify-self: stretch;
+    }
+    .JS{
+        grid-column: span 4;
+    }
+    .JAVA{
+        grid-column: span 4;
+    }
+    .CPP{
+        grid-column: span 4;
+        width: auto;
+    }
+}
+

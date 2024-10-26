@@ -1,0 +1,66 @@
+/*------ESTILO CONTACTO------*/
+
+.contacto{
+    padding: 20px;
+    padding-bottom: 35px;
+}
+
+.contacto-title{
+    text-align: center;
+}
+
+.email-contact{
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.email{
+    width: 300px;
+    padding: 10px;
+    font-family: JetBrains;
+    border-radius: 20px;
+    background-color: #fff1;
+    color: #fff;
+    box-shadow: 0 0 20px #555;
+}
+
+.copy-button{
+    display: flex;
+    padding: 5px;
+    border-radius: 15px;
+    width: 70px;
+    justify-content: center;
+    background-color: #bbb;
+    box-shadow: 0 0 20px #555;
+
+    animation-name: copialoPlis;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+
+    transition: transform 0.5s;
+}
+
+.copy-button:hover{
+    transform: scale(1.1);
+}
+
+.copy-icon{
+    width: 40px;
+    height: 40px;
+}
+
+@keyframes copialoPlis{
+    0%{
+        background-color: #ddd;
+    }
+    70%{
+        background-color: #cdc;
+    }
+    100%{
+        background-color: #cec;
+    }
+}
